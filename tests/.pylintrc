@@ -2,3 +2,5 @@
 disable=
     C0114, # missing-module-docstring
     E0401, # (import-error)
+    R0201, # Method could be a function (no-self-use)
+    R0903, # Too few public methods (0/2) (too-few-public-methods)

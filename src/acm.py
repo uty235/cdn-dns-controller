@@ -12,7 +12,7 @@ class ACM():
             aws_secret_access_key = Environment.aws_secret_key,
             region_name = Environment.aws_region
         )
-    
+
 
     def list_certificates(self):
         """ Lists all certificates in ACM. """
@@ -20,7 +20,7 @@ class ACM():
             MaxItems = 123
         )
 
-    
+
     def get_certificate(self, certificate_arn):
         """
         Lists certificate information by certificate ARN.
