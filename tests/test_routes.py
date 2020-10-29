@@ -13,3 +13,8 @@ class TestMain(unittest.TestCase):
         rv = self.app.get('/zones')
 
         assert rv.status_code != 404
+
+    def test_distribution_url(self):
+        rv = self.app.get('/distributions')
+
+        assert rv.status_code != 404

@@ -1,5 +1,4 @@
 import boto3
-
 from src.environment import Environment
 
 
