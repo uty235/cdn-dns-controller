@@ -7,3 +7,4 @@ script:
   - pylint *.py --rcfile=tests/.pylintrc
   - pylint src/ --rcfile=tests/.pylintrc
   - pytest tests/
+  - docker build -t cdn-dns-controller -f docker/Dockerfile .

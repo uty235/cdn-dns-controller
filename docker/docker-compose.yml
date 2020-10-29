@@ -1,0 +1,10 @@
+version: "2"
+services:
+  cdn-dns-controller:
+    image: ${IMAGE_NAME}:latest
+    ports:
+      - "5000:5000"
+    environment:
+      AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
+      AWS_SECRET_KEY: ${AWS_SECRET_KEY}
+      AWS_REGION: ${AWS_REGION}
