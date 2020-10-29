@@ -14,6 +14,7 @@ class TestMain(unittest.TestCase):
 
         assert rv.status_code != 404
 
+
     def test_distribution_url(self):
         rv = self.app.get('/distributions')
 
