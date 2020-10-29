@@ -1,0 +1,6 @@
+apiVersion: v2
+name: cdn-dns-controller
+description: cdn-dns-controller
+type: application
+version: 0.1.0
+appVersion: 1.16.0

@@ -1,0 +1,18 @@
+replicaCount: 2
+imagePullSecrets:
+
+image:
+  repository:
+  tag:
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 5000
+  protocol: TCP
+  portName: app
+
+env:
+  AWS_ACCESS_KEY:
+  AWS_SECRET_KEY:
+  AWS_REGION:
