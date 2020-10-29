@@ -6,3 +6,4 @@ install:
 script:
   - pylint *.py --rcfile=tests/.pylintrc
   - pylint src/ --rcfile=tests/.pylintrc
+  - pytest tests/
