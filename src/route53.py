@@ -17,11 +17,11 @@ class Route53():
         """ Function lists all hosted zones in Route53. """
         return self.client.list_hosted_zones()
 
-
+    
     def get_hosted_zone(self, zone_id):
         """
         Function return the hosted zone information
-
+        
         :param zone_id: Id of hosted zone to GET record sets.
         """
         return self.client.get_hosted_zone(
