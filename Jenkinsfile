@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+        label"build"
+    }
     environment {
         repository = "https://github.com/uty235/cdn-dns-controller"
         repositoryCredentials = "mihhail"
@@ -11,9 +14,7 @@ pipeline {
     stages {
         stage ('git clone') {
             steps {
-                script {
-                    sh 'git clone https://github.com/uty235/cdn-dns-controller'
-                } 
+                sh 'git clone https://github.com/uty235/cdn-dns-controller'
             }
         }
         stage('install dependency') {
