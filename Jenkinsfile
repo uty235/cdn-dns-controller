@@ -11,8 +11,8 @@ pipeline {
     stages {
         stage ('git clone') {
             steps {
-                gitcredentialsId: "${repositoryCredentials}"
-                    url: "${repository}"
+                gitcredentialsId: ${repositoryCredentials}
+                    url: ${repository}
             }
         }
         stage ('test') {
