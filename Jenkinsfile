@@ -11,8 +11,14 @@ pipeline {
     stages {
         stage ('git clone') {
             steps {
-                git credentialsId: mihhail
-                    url: 'https://github.com/uty235/cdn-dns-controller'
+                git credentialsId = 'mihhail'
+                    url = 'https://github.com/uty235/cdn-dns-controller'
+            }
+        }
+        stage('install dependency') {
+            steps {
+                sh 'pip install --upgrade pip'
+                sh 'pip install -r requirements.txt'
             }
         }
         stage ('test') {
