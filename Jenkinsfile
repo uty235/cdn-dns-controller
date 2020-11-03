@@ -13,7 +13,7 @@ pipeline {
             steps {
                 git credentialsId: mihhail
                     url: https://github.com/uty235/cdn-dns-controller
-            }
+            
         }
         stage ('test') {
             steps {
